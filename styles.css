@@ -1,0 +1,44 @@
+
+
+body {
+    background-image: url('assets/smg2flipout.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* Woodcutting game stuff */
+
+#woodcutgame {
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+    transform: scale(0.7)
+}
+
+#woodguystatic {
+    position: absolute;
+    z-index: 0;
+    left: 5px;
+    bottom: 8px;
+    height: 313px;
+    width: 341px;
+    cursor: pointer;
+}
+
+#woodguycutting {
+    position: absolute;
+    z-index: -1;
+    left: 5px;
+    bottom: 8px;
+    height: 313px;
+    width: 341px;
+}
+
+#always-top-layer {
+    position: relative;
+    z-index: 9999;
+    pointer-events: none;
+}
