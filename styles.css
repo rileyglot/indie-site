@@ -7,13 +7,53 @@ body {
     background-attachment: fixed;
     background-position: center;
     overflow: hidden;
+    padding: 0;
+    margin: 0;
 }
+
+
+
+/* Top banner stuff */
+
+#top-banner {
+    position: fixed;
+    width: stretch;
+    height: 11%;
+    /* background-color: #303030; */
+    background-image: linear-gradient(black, purple);
+    border-bottom: solid;
+    border-color: white;
+    }
+
+#main-logo {
+    position: relative;
+    transform: scale(0.25);
+    bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#osaka {
+    position: relative;
+    transform: scale(0.055);
+    bottom: 728px;
+    left: 740px;
+    cursor: pointer;
+}
+
+#osaka:active {
+    transform: scale(0.05);
+}
+
+
 
 /* Woodcutting game stuff */
 
 #woodcutgame {
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     right: 0px;
     transform: scale(0.7)
 }
@@ -41,4 +81,12 @@ body {
     position: relative;
     z-index: 9999;
     pointer-events: none;
+}
+
+
+#wood-count-text {
+    position: absolute;
+    left: 5px;
+    bottom: 340px;
+    color: white;
 }
