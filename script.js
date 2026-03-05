@@ -15,9 +15,17 @@ function chop() {
 
 // Osaka top bar button thingie
 
-var snd = new Audio("assets/osaka_ah_sound.mp3")
+var osaka_snd = new Audio("assets/osaka_ah_sound.mp3")
 
 function osaka_clicked() {
-    snd.play()
+    osaka_snd.play()
     // There should be more here soon I'm just tired
+}
+
+// YOU BLINKED.
+
+var bonnie_snd = new Audio("assets/YOU_BLINKED.MP3")
+
+function bonnie_clicked() {
+    bonnie_snd.play()
 }

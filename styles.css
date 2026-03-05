@@ -25,7 +25,7 @@ body {
     border-color: white;
     }
 
-#main-logo {
+#top-logo {
     position: relative;
     transform: scale(0.25);
     bottom: 70px;
@@ -45,6 +45,45 @@ body {
 
 #osaka:active {
     transform: scale(0.05);
+}
+
+
+
+/* Main window stuff */
+
+#main-window {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 37px;
+    left: 50%;
+    transform: scale(0.8) translate(-62.5%);
+    overflow: hidden;
+}
+
+#main-section {
+    position: absolute;
+    overflow: auto;
+    top: 2%;
+    height: 100%;
+    width: 99.2%;
+    scrollbar-width: none;
+    margin-left: 0%;
+    background-attachment: scroll;
+}
+
+#main-section::-webkit-scrollbar {
+    display: none;
+}
+
+#main-content {
+    position: relative;
+    background-color: black;
+    background-image: url("assets/osrs-backdrop2.gif");
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    min-height: 100%;
 }
 
 
@@ -99,7 +138,8 @@ body {
     position: fixed;
     top: 70px;
     right: 0px;
-    transform: scale(0.78)
+    transform: scale(0.78);
+    opacity: 100;
 }
 
 #kin-list-container {
@@ -125,4 +165,12 @@ body {
 
 .kin-list-image:hover {
     transform: scale(1.05);
+}
+
+#bonnie {
+    cursor: pointer;
+}
+
+#bonnie:active {
+    transform: scale(1.02);
 }

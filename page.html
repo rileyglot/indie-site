@@ -8,8 +8,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="main-window">
+        <img class="always-top-layer" src="assets/mainwindow.png" />
+        <div id="main-section">
+            <div id="main-content">
+                <p>test</p>
+            </div>
+        </div>
+    </div>
     <div id="top-banner">
-        <div id="main-logo">
+        <div id="top-logo">
             <img src="assets/logo-with-image.png" />
         </div>
         <div id="osaka">
@@ -25,7 +33,7 @@
     <div id="kin-list-section">
         <img class="always-top-layer" src="assets/mykinlistwindow.png" />
         <div id="kin-list-container">
-            <img class="kin-list-image" src="assets/kin-list-bonnie.webp" alt="osaka" />
+            <img class="kin-list-image" id="bonnie" src="assets/kin-list-bonnie.webp" onclick="bonnie_clicked()" />
             <img class="kin-list-image" src="assets/kin-list-rosa.jpg" />
             <img class="kin-list-image" src="assets/kin-list-asgore.png" />
             <img class="kin-list-image" src="assets/kin-list-gardevoir.png" />
