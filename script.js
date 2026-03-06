@@ -24,8 +24,24 @@ function osaka_clicked() {
 
 // YOU BLINKED.
 
+let bonnie_clicks = 1
 var bonnie_snd = new Audio("assets/YOU_BLINKED.MP3")
 
 function bonnie_clicked() {
-    bonnie_snd.play()
+    if (bonnie_clicks < 10) {
+        bonnie_clicks = bonnie_clicks + 1
+    } else if (bonnie_clicks === 10) {
+        bonnie_clicks = 11
+        document.getElementById("blink-top").style.top = "0"
+        document.getElementById("blink-bottom").style.bottom = "0"
+        setTimeout(function() {
+        document.getElementById("bonnie").style.opacity = "0"
+        document.getElementById("blink-top").style.top = "-50vh"
+        document.getElementById("blink-bottom").style.bottom = "-50vh"
+    }, 100)
+        setTimeout(function() {
+        bonnie_snd.play()
+    }, 250);
+
+    }
 }
