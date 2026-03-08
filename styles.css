@@ -30,6 +30,7 @@ body {
 
 #top-logo {
     position: relative;
+    top: 0.2vh;
     height: 8vh;
     display: flex;
     justify-content: center;
@@ -71,8 +72,8 @@ body {
 #main-section {
     position: absolute;
     overflow: auto;
-    top: 2%;
-    height: 100%;
+    top: 1%;
+    height: 102%;
     width: 99.2%;
     scrollbar-width: none;
     margin-left: 0%;
@@ -128,13 +129,6 @@ body {
     height: 33.6vh;
     width: 36.3vh;
 }
-
-.always-top-layer {
-    position: relative;
-    z-index: 9999;
-    pointer-events: none;
-}
-
 
 #wood-count-text {
     position: absolute;
@@ -218,6 +212,68 @@ body {
 
 
 
+/* Works window stuff */
+
+#my-works-section {
+    position: fixed;
+    top: 15vh;
+    left: 3.2vh;
+    overflow: hidden;
+}
+
+#my-works-container {
+    position: absolute;
+    z-index: 0;
+    left: 0.25vw;
+    bottom: 1.1vh;
+    height: 51.6vh;
+    width: 36.3vh;
+    background-color: wheat;
+    scrollbar-width: none;
+    overflow: scroll;
+    background-attachment: local;
+    background-image: url("assets/osrs-backdrop.jpg");
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+}
+
+#my-works-container::-webkit-scrollbar {
+    display: none;
+}
+
+.work-item {
+    position: relative;
+    width: 100%;
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding-left: 2.2vh;
+    padding-right: 2.2vh;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+}
+
+.work-item h3 {
+    margin: 0;
+    color: white;
+}
+
+.work-item p {
+    margin: 0;
+    color: white;
+}
+
+.work-item-link {
+    position: absolute;
+    top: 0%;
+    right: 5.2%;
+    color: wheat;
+}
+
+.work-item-link:visited {
+    color: yellow;
+}
+
+
+
 /* Misc. */
 
 .make-image-correct {
@@ -226,4 +282,10 @@ body {
 
 #make-main-correct {
     width: 100%;
+}
+
+.always-top-layer {
+    position: relative;
+    z-index: 9999;
+    pointer-events: none;
 }

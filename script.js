@@ -26,7 +26,7 @@ function osaka_clicked() {
 
 let bonnie_clicks = 1
 var bonnie_snd = new Audio("assets/YOU_BLINKED.MP3")
-bonnie_snd.volume = 0.4
+bonnie_snd.volume = 0.3
 
 function bonnie_clicked() {
     if (bonnie_clicks < 10) {
