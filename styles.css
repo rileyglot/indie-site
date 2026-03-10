@@ -39,10 +39,11 @@ body {
 
 #osaka {
     position: absolute;
-    right:20px;
+    right: 1.5vw;
     cursor: pointer;
     height: 8vh;
     margin-left: auto;
+    filter: grayscale(1)
 }
 
 #osaka:hover {
@@ -104,7 +105,7 @@ body {
     width: 100%;
     font-family: "Segoe UI", Arial, sans-serif;
     padding-left: 2vh;
-    padding-right: 2vh;
+    padding-right: 2.2vh;
     /* border-bottom: 1px solid black; */
     box-sizing: border-box;
 }
@@ -245,7 +246,7 @@ body {
     position: absolute;
     z-index: 0;
     left: 0.25vw;
-    bottom: 1.1vh;
+    bottom: 0.9vh;
     height: 51.6vh;
     width: 36.3vh;
     background-color: wheat;
@@ -290,6 +291,47 @@ body {
 
 .work-item-link:visited {
     color: yellow;
+}
+
+
+
+/* Osakaling behaviour */
+
+#osakaling-counter {
+    position: absolute;
+    right: 7vw;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
+}
+
+#osakaling-1 {
+    opacity: 100;
+    cursor: pointer;
+
+}
+
+#osakaling-2 {
+    opacity: 100;
+    cursor: pointer;
+
+}
+
+#osakaling-3 {
+    opacity: 100;
+    cursor: pointer;
+
+}
+
+#osakaling-4 {
+    opacity: 100;
+    cursor: pointer;
+
+}
+
+#osakaling-5 {
+    opacity: 100;
+    cursor: pointer;
+
 }
 
 
