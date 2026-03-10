@@ -72,8 +72,8 @@ body {
 #main-section {
     position: absolute;
     overflow: auto;
-    top: 1%;
-    height: 102%;
+    top: 1vh;
+    height: 100%;
     width: 99.2%;
     scrollbar-width: none;
     margin-left: 0%;
@@ -99,7 +99,27 @@ body {
     align-items: center;
 }
 
+.main-item {
+    position: relative;
+    width: 100%;
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    /* border-bottom: 1px solid black; */
+    box-sizing: border-box;
+}
 
+.main-item h2, h1 {
+    padding-top: 2.5vh;
+}
+
+.centre-text {
+    text-align: center;
+}
+
+.remove-margin {
+    margin: 0;
+}
 
 
 
