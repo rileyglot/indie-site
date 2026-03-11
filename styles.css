@@ -56,6 +56,30 @@ body {
 }
 
 
+
+#button-section {
+    position: absolute;
+    height: 100%;
+    top: 6%;
+    left: 0;
+}
+
+.top-button {
+    position: relative;
+    height: 88%;
+    cursor: pointer;
+}
+
+.top-button:hover {
+    transform: scale(1.05);
+}
+
+.top-button:active {
+    transform: scale(1);
+}
+
+
+
 /* Main window stuff */
 
 #main-window {
@@ -130,11 +154,12 @@ body {
     position: fixed;
     bottom: 5vh;
     right: 3.2vh;
+    display: none;
 }
 
 #woodguy-static {
     position: absolute;
-    z-index: 0;
+    z-index: 3;
     left: 0.25vw;
     bottom: 1vh;
     height: 33.6vh;
@@ -144,7 +169,7 @@ body {
 
 #woodguy-cutting {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     left: 0.25vw;
     bottom: 1vh;
     height: 33.6vh;
@@ -170,6 +195,7 @@ body {
     right: 3.2vh;
     opacity: 100;
     overflow: hidden;
+    display: none;
 }
 
 #kin-list-container {
@@ -203,6 +229,7 @@ body {
 #bonnie {
     cursor: pointer;
     opacity: 100%;
+    z-index: 5;
 }
 
 #bonnie:active {
@@ -229,6 +256,14 @@ body {
     transition: bottom 0.05s;
 }
 
+#bonnie-hint {
+    position: absolute;
+    height: 11.2vh;
+    right: 28vh;
+    top: 18.5vh;
+    z-index: -5
+}
+
 
 
 
@@ -240,6 +275,7 @@ body {
     top: 15vh;
     left: 3.2vh;
     overflow: hidden;
+    display: none;
 }
 
 #my-works-container {
@@ -305,33 +341,47 @@ body {
 }
 
 #osakaling-1 {
-    opacity: 100;
+    position: absolute;
+    z-index: -1;
     cursor: pointer;
-
+    top: 0vh;
+    left: 100vh;
+    height: 5vh;
 }
 
 #osakaling-2 {
-    opacity: 100;
+    position: absolute;
     cursor: pointer;
-
+    z-index: 2;
+    height: 6vh;
+    top: 3vh;
+    right: 6vh;
+    transform: rotate(180deg);
 }
 
 #osakaling-3 {
-    opacity: 100;
+    position: absolute;
     cursor: pointer;
-
+    bottom: 50vh;
+    left: 50vw;
+    z-index: -5;
 }
 
 #osakaling-4 {
-    opacity: 100;
+    position: absolute;
     cursor: pointer;
-
+    bottom: 0vh;
+    right: 0vh;
+    height: 8vh;
 }
 
 #osakaling-5 {
-    opacity: 100;
+    position: absolute;
     cursor: pointer;
-
+    z-index: 2;
+    left: 3vh;
+    top: 3vh;
+    height: 6vh;
 }
 
 
